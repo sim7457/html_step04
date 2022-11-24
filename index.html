@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>221124</title>
+    <style>
+        h2 {
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        ul li {
+            margin-bottom: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #444444;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        nav ul>li {
+            position: relative;
+        }
+
+        nav ul>li~li::before {
+            content: "";
+            position: absolute;
+            top: -65%;
+            left: 50%;
+            width: 12px;
+            height: 2px;
+            background: #f00;
+            transform: translate(-50%, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>header & footer & before-after</h2>
+    <nav>
+        <ul>
+            <li><a href="./header01.html" target="_blank">header</a></li>
+            <li><a href="./pseudo-element01.html" target="_blank">element</a></li>
+            <li><a href="./footer.html" target="_blank">footer</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
